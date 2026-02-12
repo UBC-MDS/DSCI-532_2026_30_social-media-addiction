@@ -23,6 +23,7 @@ bug, create an associated issue [here](https://github.com/UBC-MDS/DSCI-532_2026_
 *  New code should follow the PEP8 [style guide](https://www.python.org/dev/peps/pep-0008/) and be properly documented.
 *  Each pull request is required approval from at least 1 other collaborating member prior to merging with the main branch.
 *  Pull requests should be kept reasonably focused on one issue or one group of tasks where it makes sense.
+*  After a pull request is merged, the corresponding branch should be deleted where appropriate.
    
 ### Attribution
 These contributing guidelines were adapted from the [Breast Cancer Predictor Project Contributing Guidelines](https://github.com/tidyverse/dplyr/blob/master/.github/CONTRIBUTING.md), which was adapted from the the [dplyr contributing guidelines](https://github.com/tidyverse/dplyr/blob/master/.github/CONTRIBUTING.md).
