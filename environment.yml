@@ -1,0 +1,9 @@
+name: 532_g30
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - pandas>=2.0
+  - altair>=5.0
+
