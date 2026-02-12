@@ -9,3 +9,6 @@ dependencies:
   - altair>=5.0
   - shiny>=1.0.0
   - shinywidgets>=0.3.0
+  - pip
+  - pip:
+    - kagglehub  
