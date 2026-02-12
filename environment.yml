@@ -1,4 +1,4 @@
-name: 532_g30
+name: 532
 channels:
   - conda-forge
   - defaults
