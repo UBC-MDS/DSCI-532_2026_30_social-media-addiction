@@ -15,7 +15,7 @@ the GitHub web interface, so long as the changes are made in the _source_ file.
 
 Before you make a substantial pull request, you should always file an issue and
 make sure someone from the team agrees that it's a problem. If you've found a
-bug, create an associated issue [here](https://github.com/UBC-MDS/DSCI-532_2026_30_foobar/issues).
+bug, create an associated issue [here](https://github.com/UBC-MDS/DSCI-532_2026_30_social-media-addiction/issues).
 
 ### Pull request process
 
