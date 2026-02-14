@@ -128,12 +128,58 @@ These interactions allow users to move from general exploration to targeted deci
 
 ## Section 4: Exploratory Data Analysis
 
-To demonstrate that our dataset can support meaningful decision-making, we focused on **User Story 2**:
+To demonstrate that our dataset can support meaningful decision-making, we focused on the following user story:
 
 > As a university counselor, I want to examine the relationship between daily usage hours and sleep duration so that I can understand whether excessive social media use is impacting students' rest.
 
-We created an exploratory analysis notebook:
+We conducted exploratory data analysis in:
 `notebooks/eda_analysis.ipynb`
+
+---
+
+### Visualization 1: Social Media Usage vs Sleep Duration
+
+![Usage vs Sleep](../img/usage_sleep.png)
+
+The scatter plot shows **Avg_Daily_Usage_Hours** on the x-axis and **Sleep_Hours_Per_Night** on the y-axis.
+
+The visualization reveals a clear **negative relationship** between usage and sleep duration. As daily social media usage increases, reported sleep hours decrease. Students spending 7–8 hours per day on social media tend to sleep significantly less than those spending 2–3 hours.
+
+This pattern suggests that excessive social media use may contribute to sleep reduction, which is strongly linked to mental health and academic performance outcomes.
+
+---
+
+### Visualization 2: Average Addiction Score by Usage Category
+
+![Addiction by Usage](../img/addiction_usage.png)
+
+Students were grouped into three usage categories:
+- Low (0–2 hours)
+- Moderate (2–5 hours)
+- High (>5 hours)
+
+The bar chart shows that:
+
+- Low usage students have an average addiction score of approximately **2.5**
+- Moderate usage students have an average addiction score of approximately **5.5**
+- High usage students have an average addiction score of approximately **7.8**
+
+This demonstrates a strong positive association between time spent on social media and addiction severity.
+
+---
+
+### Decision-Making Implications
+
+These results confirm that the dataset supports our proposed dashboard functionality.
+
+Specifically:
+
+- Increased usage hours are associated with reduced sleep duration.
+- Higher usage groups show substantially higher addiction scores.
+- The data supports filtering, subgroup comparison, and risk identification.
+
+This evidence demonstrates that the dashboard can help counselors and policymakers identify high-risk behavioral patterns and design targeted digital well-being interventions.
+
 
 ## Section 5: App Sketch & Description
 
