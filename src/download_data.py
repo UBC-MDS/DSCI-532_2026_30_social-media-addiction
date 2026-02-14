@@ -11,7 +11,7 @@ def download_data():
     cached_path = kagglehub.dataset_download("zahranusratt/student-social-media-addiction-analysis-dataset")
     
     print(f"Copying data to {target_dir}...")
-    shutil.copytree(cached_path, target_dir, dirs_exist_ok=True)
+    shutil.copytree(cached_path, data_dir, dirs_exist_ok=True)
 
     print("Done.")
         
