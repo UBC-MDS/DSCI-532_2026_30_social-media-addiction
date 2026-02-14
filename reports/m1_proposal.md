@@ -11,22 +11,120 @@ These examples are provided to help you understand the expected depth and style 
 
 ## Section 2: Description of the Data
 
-> We will be visualizing a dataset of approximately 300,000 missed patient appointments. Each appointment has 15 associated variables that describe the following characteristics, which we hypothesize could be helpful in determining why patient's miss their appointments:
->
-> - Patient demographics (`patient_id`, `gender`, `age`, etc)
-> - The health status of the patient (`general_health_status`, `existing_conditions` e.g. "Hypertension", "Physical disability")
-> - Information about the appointment itself (`appointment_id`, `appointment_date`)
->
-> Using this data we will also derive new variables, such as the time since the patient's last appointment (`days_since_last_appointment`) and which weekday the appointment was on (`appointment_weekday`), as it would be interesting to explore if these could be linked to the patient missing their appointment.
+We use the **Students Social Media Addiction Dataset**, from kaggle which contains structured survey responses capturing students’ demographic characteristics, social media usage behavior, and indicators of addiction.
+
+The dataset contains **705 observations (rows)** and **13 variables (columns)**. Each row represents one individual student’s survey response.
+
+### Key Variables
+
+The variables can be grouped into three major categories:
+
+####  Demographic Variables
+- **Age**
+- **Gender**
+- **Academic_Level**
+- **Country**
+- **Relationship_Status**
+
+These variables allow us to compare addiction patterns across different student subgroups (e.g., age groups, academic levels, or countries).
+
+---
+
+#### Social Media Usage Behavior
+- **Avg_Daily_Usage_Hours** – Average number of hours spent on social media per day.
+- **Most_Used_Platform** – Primary platform used (e.g., Instagram, TikTok, etc.).
+- **Conflicts_Over_Social_Media** – Whether usage causes interpersonal conflicts.
+
+These variables help measure the intensity and behavioral patterns of social media use.
+
+---
+
+####  Academic & Psychological Impact Indicators
+- **Affects_Academic_Performance** – Whether social media impacts studies.
+- **Sleep_Hours_Per_Night** – Average sleep duration.
+- **Mental_Health_Score** – Numerical indicator of mental well-being.
+- **Addicted_Score** – Numerical score quantifying addiction severity.
+
+These variables are central to our problem, as they measure the consequences of excessive social media use on academic performance, sleep quality, and mental health.
+
+---
+
+### Relevance to the Problem
+
+This dataset is highly relevant to our dashboard’s goal of supporting healthier digital behavior among students.
+
+- The **Addicted_Score** provides a measurable indicator of addiction severity.
+- **Avg_Daily_Usage_Hours** allows us to examine whether increased usage correlates with higher addiction.
+- **Sleep_Hours_Per_Night** and **Mental_Health_Score** help assess psychological and physiological effects.
+- **Affects_Academic_Performance** directly connects usage to educational outcomes.
+
+By integrating these variables into an interactive dashboard, users (e.g., educators, counselors, or policymakers) can:
+
+- Identify high-risk student groups.
+- Compare addiction levels across demographic categories.
+- Explore relationships between screen time, sleep, and mental health.
+- Support data-driven interventions for digital well-being.
+
+Because the dataset is clean and tabular, it supports filtering, grouping, and comparative visualizations, making it well-suited for an interactive decision-support dashboard.
 
 ## Section 3: Research Questions & Usage Scenarios
 
+
+### Persona
+
+**Dr. Amina Patel** is a university student wellness coordinator. She is responsible for promoting mental health awareness and identifying behavioral risks among students. She wants data-driven insights to support intervention programs and policy decisions related to digital well-being.
+
+---
+
 ### Usage Scenario
-> Mary is a policy maker with the Canadian Ministry of Health and she wants to understand what factors lead to missed appointments in order to devise an intervention that improves attendance numbers. She wants to be able to [explore] a dataset in order to [compare] the effect of different variables on absenteeism and [identify] the most relevant variables around which to frame her intervention policy.
->
-> When Mary logs on to our "Missed Appointments app", she will see an overview of all the available variables in her dataset, according to the number of people that did or did not show up to their medical appointment. She can filter out variables for head-to-head comparisons, and explore which variables are most important in determining whether a patient will show up to their appointment. When she does so, Mary may e.g. notice that "physical disability" appears to be a strong predictor missing appointments, and in fact patients with a physical disability also have the largest number of missed appointments.
->
-> Based on her findings from using our app, Mary hypothesizes that patients with a physical disability could be having a hard time finding transportation to their appointments, and decides she needs to conduct a follow-on study since transportation information is not captured in her current dataset.
+
+Dr. Patel is preparing a mental health awareness campaign focused on digital habits. She wants to understand which groups of students are most vulnerable to social media addiction and how excessive usage impacts sleep, academic performance, and mental health.
+
+Using the dashboard, she filters the data by academic level and gender to explore patterns in addiction scores. She compares average daily usage hours across platforms and investigates whether higher usage correlates with lower sleep hours or mental health scores.
+
+The interactive dashboard allows her to identify high-risk groups and generate evidence-based recommendations for workshops, awareness campaigns, and counseling support initiatives.
+
+---
+
+### Research Questions
+
+The dashboard is designed to help answer the following key questions:
+
+1. How does average daily social media usage relate to addiction levels?
+2. Are certain demographic groups (age, gender, academic level) more vulnerable to addiction?
+3. Does higher addiction correlate with lower sleep duration or poorer mental health?
+4. Do students who report academic performance issues also have higher addiction scores?
+
+---
+
+### User Stories / Jobs To Be Done (JTBD)
+
+**User Story 1**  
+As a wellness coordinator, I want to compare addiction scores across different academic levels so that I can identify which groups require targeted intervention.
+
+**User Story 2**  
+As a university counselor, I want to examine the relationship between daily usage hours and sleep duration so that I can understand whether excessive social media use is impacting students' rest.
+
+**User Story 3**  
+As a policy decision-maker, I want to filter students by platform usage and addiction score so that I can determine whether certain platforms are associated with higher dependency risks.
+
+**User Story 4**  
+When preparing a mental health awareness report, I want to visualize how addiction score correlates with mental health score so that I can support evidence-based recommendations.
+
+---
+
+### How Users Will Interact with the App
+
+Users will be able to:
+
+- Filter by age, gender, academic level, and country.
+- Select a social media platform to compare addiction patterns.
+- Adjust sliders for daily usage hours.
+- View summary statistics (average addiction score, average sleep hours).
+- Explore interactive charts showing correlations between addiction, sleep, and mental health.
+
+These interactions allow users to move from general exploration to targeted decision-making.
+
 
 ### User Stories
 *You can choose to frame your detailed requirements as User Stories...*
