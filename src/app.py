@@ -117,9 +117,76 @@ app_ui = ui.page_fluid(
     ),
 )
 
+# ── SERVER ───────────────────────────────────────────────────────────
 
+def server(input, output, session):
 
+    # ── Filtered data ─────────────────────────────────────────────────
+    # TODO: Add filter logic here once sidebar inputs are wired up.
+    # For now, filtered() just returns the full dataset.
 
+    @reactive.calc
+    def filtered():
+        return df.copy()
+
+    # ── Stat tiles ────────────────────────────────────────────────────
+    # TODO: Uncomment and wire up once value_box uses output_text(...)
+
+    # @render.text
+    # def tile_students():
+    #     return str(len(filtered()))
+
+    # @render.text
+    # def tile_usage():
+    #     d = filtered()
+    #     return f"{d['Avg_Daily_Usage_Hours'].mean():.1f}h" if len(d) else "—"
+
+    # @render.text
+    # def tile_sleep():
+    #     d = filtered()
+    #     return f"{d['Sleep_Hours_Per_Night'].mean():.1f}h" if len(d) else "—"
+
+    # @render.text
+    # def tile_score():
+    #     d = filtered()
+    #     return f"{d['Addicted_Score'].mean():.1f}" if len(d) else "—"
+
+    # ── Map ───────────────────────────────────────────────────────────
+    # TODO: Implement and uncomment when the UI card uses output_widget("map_chart")
+
+    # @render_plotly
+    # def map_chart():
+    #     ...
+
+    # ── Chart 1: Affects Academic Performance ─────────────────────────
+    # TODO: Implement and uncomment when the UI card uses output_widget("chart_affects")
+
+    # @render_plotly
+    # def chart_affects():
+    #     ...
+
+    # ── Chart 2: Academic Level ───────────────────────────────────────
+    # TODO: Implement and uncomment when the UI card uses output_widget("chart_level")
+
+    # @render_plotly
+    # def chart_level():
+    #     ...
+
+    # ── Chart 3: Sleep Distribution ───────────────────────────────────
+    # TODO: Implement and uncomment when the UI card uses output_widget("chart_sleep")
+
+    # @render_plotly
+    # def chart_sleep():
+    #     ...
+
+    # ── Chart 4: Platform Distribution ───────────────────────────────
+    # TODO: Implement and uncomment when the UI card uses output_widget("chart_platform")
+
+    # @render_plotly
+    # def chart_platform():
+    #     ...
+
+    pass 
 
 # ── APP ───────────────────────────────────────────────────────────────
 
